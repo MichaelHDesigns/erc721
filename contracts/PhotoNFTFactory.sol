@@ -5,7 +5,7 @@ import { SafeMath } from "./openzeppelin-solidity/contracts/math/SafeMath.sol";
 import { Strings } from "./libraries/Strings.sol";
 import { PhotoNFTFactoryStorages } from "./photo-nft-factory/commons/PhotoNFTFactoryStorages.sol";
 import { PhotoNFT } from "./PhotoNFT.sol";
-import { PhotoNFTMarketplace } from "./PhotoNFTMarketplace.sol";
+import { PhotoNFTMarketplace } from "./PhotoNFTMarketPlace.sol";
 import { PhotoNFTData } from "./PhotoNFTData.sol";
 
 
@@ -19,13 +19,13 @@ contract PhotoNFTFactory is PhotoNFTFactoryStorages {
     address[] public photoAddresses;
     address PHOTO_NFT_MARKETPLACE;
 
-    PhotoNFTMarketplace public photoNFTMarketplace;
+    PhotoNFTMarketPlace public photoNFTMarketPlace;
     PhotoNFTData public photoNFTData;
 
-    constructor(PhotoNFTMarketplace _photoNFTMarketplace, PhotoNFTData _photoNFTData) public {
-        photoNFTMarketplace = _photoNFTMarketplace;
+    constructor(PhotoNFTMarketPlace _photoNFTMarketPlace, PhotoNFTData _photoNFTData) public {
+        photoNFTMarketPlace = _photoNFTMarketPlace;
         photoNFTData = _photoNFTData;
-        PHOTO_NFT_MARKETPLACE = address(photoNFTMarketplace);
+        PHOTO_NFT_MARKETPLACE = address(photoNFTMarketPlace);
     }
 
     /**
