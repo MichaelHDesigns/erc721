@@ -40,7 +40,7 @@ module.exports = {
     },
     // main ethereum network(mainnet)
     live: {
-      provider: () => new HDWalletProvider(mnemonic, "https://rpc0.altcoinchain.org/rpc" + process.env.INFURA_KEY),
+      provider: () => new HDWalletProvider(mnemonic, `wss://rpc0.altcoinchain.org/rpc` + process.env.INFURA_KEY),
       network_id: 2330,
       gas: 5500000,
       gasPrice: 2000000000 // 2 gwei
