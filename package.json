@@ -8,7 +8,7 @@
     "start-blank": "rm -rf client/src && cp -rf barebones/src client/",
     "client": "cd client && npm run start",
     "console": "truffle console --network local",
-    "migrate:local": "truffle migrate --reset --network local",
+    "migrate:live": "truffle migrate --reset --network live",
     "migrate:ropsten": "truffle migrate --reset --network ropsten"
   },
   "author": "masaun",
