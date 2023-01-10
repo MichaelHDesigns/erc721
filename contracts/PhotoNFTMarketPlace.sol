@@ -9,7 +9,7 @@ import { PhotoNFTMarketplaceEvents } from "./photo-nft-marketplace/commons/Photo
 import { PhotoNFTData } from "./PhotoNFTData.sol";
 
 
-contract PhotoNFTMarketplace is PhotoNFTTradable, PhotoNFTMarketplaceEvents {
+contract PhotoNFTMarketPlace is PhotoNFTTradable, PhotoNFTMarketplaceEvents {
     using SafeMath for uint256;
 
     address public PHOTO_NFT_MARKETPLACE;
