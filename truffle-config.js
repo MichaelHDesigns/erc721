@@ -40,15 +40,15 @@ module.exports = {
     },
     // main ethereum network(mainnet)
     live: {
-      provider: () => new HDWalletProvider(mnemonic, "https://mainnet.infura.io/v3/" + process.env.INFURA_KEY),
-      network_id: 1,
+      provider: () => new HDWalletProvider(mnemonic, "https://rpc0.altcoinchain.org/rpc" + process.env.INFURA_KEY),
+      network_id: 2330,
       gas: 5500000,
       gasPrice: 2000000000 // 2 gwei
     },
     local: {
-      host: '127.0.0.1',
+      host: '134.209.116.247',
       port: 8545,
-      network_id: '*',
+      network_id: '2330',
       skipDryRun: true,
       gasPrice: 5000000000
     }
